@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Document Object Model 4</title>
+</head>
+
+<body>
+
+  <p> <b> API </b> <br> An API is simply a medium to fetch or send data between interfaces. <br> Let’s say you want to
+    make an application that provides the user with some real-time data fetched from the server or maybe even allows you
+    to modify or add data to some other endpoint. This is made possible by the API or the Application Programming
+    Interface. </p>
+  <p><b>Features of Asynchronous code : </b> <br> 1. clean and concise <br> 2. better error handling <br> 3. better
+    debugging </p>
+  <p><b>Promises</b> <br> The Promise object represents the eventual completion (or failure) of an asynchronous
+    operation and its resulting value. <br>
+    A Promise is a proxy for a value not necessarily known when the promise is created. It allows you to associate
+    handlers with an asynchronous action's eventual success value or failure reason. This lets asynchronous methods
+    return values like synchronous methods: instead of immediately returning the final value, the asynchronous method
+    returns a promise to supply the value at some point in the future. <br>
+    A Promise is in one of these states: <br>
+    pending: initial state, neither fulfilled nor rejected. <br>
+    fulfilled: meaning that the operation was completed successfully. <br>
+    rejected: meaning that the operation failed. <br> </p>
+  <p> <b>Promise resolve() method: </b> <br> The promise.resolve() method in JS returns a Promise object that is
+    resolved with a given value. Any of the three things can happen: <br>
+    1. If the value is a promise then the promise is returned. <br>
+    2. If the value has a “then” attached to the promise, then the returned promise will follow that “then” to till the
+    final state. <br>
+    3. The promise fulfilled with its value will be returned. </p>
+  <p> <b>The Promise.reject() method </b> <br> is used to return a rejected Promise object with a given reason for
+    rejection. It is used for debugging purposes and selective error catching. The catch() method can be used for
+    logging the output of the reject() method to the console that is catch() method acts as a career which carries the
+    rejected message from Promise.reject() method and displays that in user’s console. </p>
+  <p> <b> FETCH API </b> <br> Fetch API fetches the resource from the network and returns a promise that gets fulfilled
+    once the response is availble. <br> The output of fetch API is always a Promise. <br>
+    Whenever you are using Fetch API you have to send the URL and options. <br> Options is the object which contains
+    ket=y value pairs of your secret key.
+    <br>Sometimes you have to send a key for authentication like your login credentials, username etc. This becomes your
+    secret key through which you can access your particular API.
+    <br> So, along with the URL some other data is also sent from your end to the server for you to get access to the
+    API. To do this you have to use Request Header
+  </p>
+  <p> <b> Closures : </b> <br> A closure is the combination of a function bundled together (enclosed) with references to
+    its surrounding state (the lexical environment). <br> In other words, a closure gives you access to an outer
+    function's scope from an inner function. <br> In JavaScript, closures are created every time a function is created,
+    at function creation time. <br>
+  </p>
+
+  <script src="Sync-Async.js">  </script>
+</body>
+
+</html>
