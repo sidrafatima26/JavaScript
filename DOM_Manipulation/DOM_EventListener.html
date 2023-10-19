@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> DOM Manipulation 2 </title>
+</head>
+
+<body>
+  <!-- <h2>JavaScript HTML Events</h2>
+    <h2 onclick="this.innerHTML='Ooops!'">Click on this text!</h2>
+    <p>Click the button to display the date.</p>
+    <button onclick="displayDate()">The time is?</button> -->
+  <h1> Event Listener </h1>
+  <p id="wrapper">Hello!! JavaScript DOM + ModernJS</p>
+  <a href="http://www.google.com"> First </a> <br>
+  <a href="http://www.google.com"> Second </a> <<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> DOM Manipulation 2 </title>
+</head>
+
+<body>
+  <!-- <h2>JavaScript HTML Events</h2>
+    <h2 onclick="this.innerHTML='Ooops!'">Click on this text!</h2>
+    <p>Click the button to display the date.</p>
+    <button onclick="displayDate()">The time is?</button> -->
+  <h1> Event Listener </h1>
+  <p id="wrapper">Hello!! JavaScript DOM + ModernJS</p>
+  <a href="http://www.google.com"> First </a> <br>
+  <a href="http://www.google.com"> Second </a> <br>
+  <a href="http://www.google.com"> Third </a> <br>
+  <div class="box">
+    One drawback of writing JS code in the console inside inspect element of a webpage is that on load/ repload/ refresh
+    all the code gets executed.<br>
+    A JavaScript can be executed when an event occurs, like when a user clicks on an HTML element.<br>
+    To execute code when a user clicks on an element, add JavaScript code to an HTML event attribute
+    EventTarget is a top level interface and has no parent.<br>
+    It has 3 methods. Node inherits from EventTarget.<br>
+    Node= HTML Characters -> tags -> tokens -> Nodes -> DOM.<br>
+    EventTarget is an interface implemented by objects that can receive events and may have listeners for them.<br>
+    Event hone ke baad jo action hoga vo eventlistener define karga.<br>
+    Tere are three methods in EventTarget 1.addEventListener()2.removeEventListener()3.dispatchEvent() class or
+    interfaces = Blueprints, Objects= Reality.<br>
+    Adding an EventListener() on an EventTarget(): 1.Listen to an Event 2.Respond to Event 3.Hook to Event. <br>
+    Window is a global object and EventTarget is an interface.
+    Syntax:- <EventTarget>.addEventListener(<Event to Listen for>,<Function to run when Event Happens>).Pehle suno aur
+          fir act karo.<br>
+          you will need 3 things 1.EventTarget-IOn which component of the HTML docment does the user want to apply
+          EventTarget to.<br>
+          It can be the whole documnet, a div, a p, a q, a span, an article, a video etc. 2.EventType:- Eg-Click,
+          Scroll, Double Click 3.Function- Define what to do when an event happens<br>
+          removeEventListener method requires you to pass the same exact listener function to it as the one passed in
+          addEventListener.<br>
+          Loose equality ==, Strict equality ===.<br>
+          In strict equality the value and type must be same but in loose equality only value is same.<br>
+          Type Coersion JS will try to convert items compared into same type. === prevents type coersion and == allows
+          it.<br>
+          Type Coercion refers to the process of automatic or implicit conversion of values from one data type to
+          another. <br>
+          This includes conversion from Number to String, String to Number, Boolean to Number etc. when different types
+          of operators are applied to the values.<br>
+          The target property returns the element where the event occured. <br>
+          The target property is read-only.<br>
+          The target property returns the element on which the event occurred, opposed to the currentTarget property,
+          which returns the element whose event listener triggered the event.
+  </div>
+  <article id="container">
+    <p> What is Event propagation? <br> <span> Event propagation, also known as event bubbling and event capturing,
+        refers to the order in which events are triggered and processed in the DOM hierarchy. During event bubbling, the
+        event is first triggered on the target element and then propagates up the DOM tree to the root element. During
+        event capturing, the event is triggered at the root element and then propagates down to the target
+        element.</span> </p>
+    <p> How to stop Event Propagation? <br> <span> You can stop event propagation in the DOM using the stopPropagation()
+        method of the Event object. Calling this method within an event listener prevents the event from propagating
+        further up or down the DOM tree. </span> </p>
+    <p> What is the this keyword in event handling? <br> <span> In event handling, the this keyword refers to the
+        element that triggered the event. It provides a way to access the current HTML element within the event handler
+        function. </span> </p>
+  </article>
+
+  <script src="DOM_EventListener.js">
+        // document.addEventListener('DOMContentLoaded', function(){ });
+  </script>
+</body>
+
+</html>br>
+  <a href="http://www.google.com"> Third </a> <br>
+  <div class="box">
+    One drawback of writing JS code in the console inside inspect element of a webpage is that on load/ repload/ refresh
+    all the code gets executed.<br>
+    A JavaScript can be executed when an event occurs, like when a user clicks on an HTML element.<br>
+    To execute code when a user clicks on an element, add JavaScript code to an HTML event attribute
+    EventTarget is a top level interface and has no parent.<br>
+    It has 3 methods. Node inherits from EventTarget.<br>
+    Node= HTML Characters -> tags -> tokens -> Nodes -> DOM.<br>
+    EventTarget is an interface implemented by objects that can receive events and may have listeners for them.<br>
+    Event hone ke baad jo action hoga vo eventlistener define karga.<br>
+    Tere are three methods in EventTarget 1.addEventListener()2.removeEventListener()3.dispatchEvent() class or
+    interfaces = Blueprints, Objects= Reality.<br>
+    Adding an EventListener() on an EventTarget(): 1.Listen to an Event 2.Respond to Event 3.Hook to Event. <br>
+    Window is a global object and EventTarget is an interface.
+    Syntax:- <EventTarget>.addEventListener(<Event to Listen for>,<Function to run when Event Happens>).Pehle suno aur
+          fir act karo.<br>
+          you will need 3 things 1.EventTarget-IOn which component of the HTML docment does the user want to apply
+          EventTarget to.<br>
+          It can be the whole documnet, a div, a p, a q, a span, an article, a video etc. 2.EventType:- Eg-Click,
+          Scroll, Double Click 3.Function- Define what to do when an event happens<br>
+          removeEventListener method requires you to pass the same exact listener function to it as the one passed in
+          addEventListener.<br>
+          Loose equality ==, Strict equality ===.<br>
+          In strict equality the value and type must be same but in loose equality only value is same.<br>
+          Type Coersion JS will try to convert items compared into same type. === prevents type coersion and == allows
+          it.<br>
+          Type Coercion refers to the process of automatic or implicit conversion of values from one data type to
+          another. <br>
+          This includes conversion from Number to String, String to Number, Boolean to Number etc. when different types
+          of operators are applied to the values.<br>
+          The target property returns the element where the event occured. <br>
+          The target property is read-only.<br>
+          The target property returns the element on which the event occurred, opposed to the currentTarget property,
+          which returns the element whose event listener triggered the event.
+  </div>
+  <article id="container">
+    <p> What is Event propagation? <br> <span> Event propagation, also known as event bubbling and event capturing,
+        refers to the order in which events are triggered and processed in the DOM hierarchy. During event bubbling, the
+        event is first triggered on the target element and then propagates up the DOM tree to the root element. During
+        event capturing, the event is triggered at the root element and then propagates down to the target
+        element.</span> </p>
+    <p> How to stop Event Propagation? <br> <span> You can stop event propagation in the DOM using the stopPropagation()
+        method of the Event object. Calling this method within an event listener prevents the event from propagating
+        further up or down the DOM tree. </span> </p>
+    <p> What is the this keyword in event handling? <br> <span> In event handling, the this keyword refers to the
+        element that triggered the event. It provides a way to access the current HTML element within the event handler
+        function. </span> </p>
+  </article>
+
+  <script src="DOM_EventListener.js">
+        // document.addEventListener('DOMContentLoaded', function(){ });
+  </script>
+</body>
+
+</html>
