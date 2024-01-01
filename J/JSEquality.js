@@ -47,7 +47,7 @@ let j = true + true;
 console.log(j);
 
 //Returns octal representation of the number 25
-console.log(0025);
+console.log("Two zeros before a number in cosole.log gives the Octal value of that number", 0015);
 
 //Async Await and the use of try catch
 function l() {
@@ -106,3 +106,38 @@ delete o.a; //Deletion of existing key value pairs in Object.seal() will be igno
 o.a = 10; 
 console.log(o.a); //  This will work because you can update the existing values in Object.seal()
 console.log(o.a);
+
+//JavaScript PROMISES
+let promise = new Promise( function( resolve, reject ){
+  console.log("You are inside a Promise");
+  //resolve(2000);
+  //reject(0);
+} )
+console.log("You are outside a Promise");
+
+let promise1 = new Promise( function(resolve, reject){
+  setTimeout( () => {
+    console.log("You are inside the setTimeout function of promise1");
+  }, 1000 );
+  resolve(true);
+  //reject(true);
+} )
+promise1.then( () =>
+  {
+    console.log("If a promise resolves or gets fulfilled you add an action after it. This is a callback function that takes upto two argument. then() is mainly used for promise chaining ");
+  });
+
+promise1.catch( (e) => {
+  console.log("An error has occured.", e);
+})
+
+//ASYNC Function and Promises SIMILARITY
+//Async function makes a promise easier to write. Async function returnes a promise. Await function waits for the promise to be fulfilled.
+async function p(){
+  return "You are inside async function p that returnes a promise";
+}
+p().then( ()=>{console.log("The promise has been fulfilled/resolved")} )
+p().catch( () => {console.log("An Error has occured. The promise has been rejected")} )
+function p1(){
+  return Promise.resolve("You are inside function p1 that returnes a resolved promise");
+}
