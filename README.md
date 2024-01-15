@@ -12,7 +12,7 @@ In this project, we've used several important JavaScript topics:
 - **`slice`:** The `slice` method is used to extract a portion of an array and returns a new array. In this project, we use `slice` to display a subset of arithmetic operations.
 - **`concat`:** The `concat` method is used to merge two or more arrays and returns a new array. In this project, we use `concat` to combine arrays of arithmetic operations.
 
-### String Methods: `split` and `join`
+### Methods: `split` and `join`
 - **`split`:** The `split` method is used to split a string into an array of substrings based on a specified delimiter. In this project, we use it to split user input for arithmetic operations.
 - **`join`:** The `join` method is used to join all elements of an array into a single string, separated by a specified delimiter. In this project, we use it to display results.
 
