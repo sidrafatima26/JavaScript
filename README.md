@@ -13,6 +13,7 @@ Contains all [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScrip
 - Reduce
 - ==
 - ===
+- Async Await
 
 ## Callback Function:
 
@@ -103,3 +104,6 @@ Example:
 Best Practice:
 
 It's generally recommended to use === for explicit and predictable comparisons, avoiding unexpected type coercion.
+
+## Async Await
+async and await make promises easier to write. async makes a function return a Promise. await makes a function wait for a Promise
