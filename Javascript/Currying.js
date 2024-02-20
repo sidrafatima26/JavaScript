@@ -20,8 +20,27 @@ function sum(a, b) {
 // It makes the code more readable
 
 //Currying with Closures
-let plus = function sum(x) {
+let plus = function (x) {
   return function (y) {
     console.log(x + y);
   };
 };
+
+//Currying using bind
+let multiply = function (x,y){
+  console.log(x*y);
+}
+let multiplybytwo = multiply.bind(this, 2);
+multiplybytwo(3);
+
+//The bind() method of Function instances creates a new function that, when called, calls this function with its this keyword set to the provided value, and a given sequence of arguments preceding any provided when the new function is called.
+const person = {
+  firstName:"John",
+  lastName: "Doe",
+  display: function () {
+    console.log(this.firstName, this.lastName)
+  }
+}
+
+let display = person.display.bind(person);
+setTimeout(display, 3000);
