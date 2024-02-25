@@ -1,3 +1,22 @@
+
+//Currying is a technique in functional programming that convers a function of multiple argumenst into multiple functions of one argument
+
+function cuboid1(length, breadth, height){
+  return length*breadth*height;
+}
+
+let cuboid = function(length){
+  return function(breadth){
+    return function (height){
+      console.log( length*breadth*height);
+    }
+  }
+}
+cuboid(1,2,3)
+
+
+
+
 //The output should be 5 in both the cases
 console.log(sum(2, 3));
 console.log(sum(2)(3));
