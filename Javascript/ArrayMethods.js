@@ -62,3 +62,7 @@ let totalMarks = students.map( (stu) => {
   return stu
 }).filter( (stu)=> stu.marks > 60  ).reduce( (acc,curr) => acc+curr.marks,0 )
 console.log(totalMarks)
+
+//Only names of syudents who scored more than 60
+let mts = students.filter(stu => stu.marks > 60).map(stu => stu.name)
+console.log(mts)
