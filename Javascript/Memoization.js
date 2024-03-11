@@ -1,3 +1,50 @@
+//Memoisation/cacheing
+function factorial(n){
+  if(n == 0 || n == 1 )
+    return 1
+  else
+    return n * factorial(n-1)
+}
+
+function memoise(){
+  const cache = {}
+  return function(n){
+    if( n in cache){
+      return cache[n]
+    }
+    else{
+      const result = factorial(n)
+      cache[n] = result
+      return result
+    }
+  }
+}
+
+const memoised = memoise();
+console.time("five")
+console.log(memoised(5))
+console.timeEnd("five")
+console.time("five1")
+console.log(memoised(5))
+console.timeEnd("five1")
+console.time("Three")
+console.log(memoised(3))
+console.timeEnd("Three")
+console.time("Three2")
+console.log(memoised(3))
+console.timeEnd("Three2")
+
+
+
+
+
+
+
+
+
+
+
+
 // Define a function to calculate the factorial of a number
 function factorial(n) {
   // Base case: if n is 0 or 1, return 1
